@@ -1,5 +1,4 @@
 node('slave2') {
-    stages {
         stage('printing statements') {
             parallel {
                 stage('Print statement1') {
@@ -14,5 +13,4 @@ node('slave2') {
                             }
                     }
                   }
-                }
             }
